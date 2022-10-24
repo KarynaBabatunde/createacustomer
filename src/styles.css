@@ -1,0 +1,98 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #e3f2fd;
+}
+
+header {
+  text-align: relative;
+  font-weight: 20;
+  margin: 0;
+  font-size: 20px;
+  line-height: 48px;
+}
+.container {
+  position: relative;
+  max-width: 320px;
+  width: 100%;
+  margin: 80px auto 30px;
+}
+form {
+  background: none;
+  padding: none;
+  border: none;
+  display: flex;
+}
+.dropdown {
+  position: relative;
+  margin-top: 15px;
+  width: 300px;
+  height: 50px;
+}
+input {
+  outline: none;
+  border: none;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.dropdown::before {
+  content: "";
+  position: absolute;
+  right: 80px;
+  top: 18px;
+  z-index: 10000;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #333;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(-45deg);
+  transition: 0.5s;
+  pointer-events: none;
+}
+.dropdown .option {
+  position: absolute;
+  top: 70px;
+  width: 80%;
+  background: #fff;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  display: none;
+}
+.dropdown .option div {
+  padding: 12px 20px;
+  cursor: pointer;
+}
+.dropdown.active .option {
+  display: block;
+}
+.dropdown .option div:hover {
+  background: powderblue;
+}
+a {
+  position: absolute;
+  margin-left: 75%;
+  margin-bottom: 20px;
+}
+.customer-container {
+  display: flex;
+  margin-top: 15px;
+}
+.customer-list {
+  list-style: none;
+}
